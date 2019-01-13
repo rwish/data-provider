@@ -1,0 +1,17 @@
+<div class="propertyDet">
+
+  <div class="timePicker">
+    <app-timing (time)='onNotify($event)'></app-timing>
+    <br>
+  </div>
+
+
+  <h1>{{properties.propName}}</h1>
+   
+  <div class="rooms">
+    <app-room-details *ngFor="let room of properties.existingRooms" 
+      [room]="room">
+    </app-room-details>
+  </div>
+
+</div>

@@ -1,0 +1,101 @@
+
+
+
+    <div class="container">
+
+
+        <div class="first">
+          <table>
+              <tr>
+
+                  <td style="width:fit-content;">
+                    <ul style="float:left; width:fit-content;">
+                        <li>
+                            <div (click)="today('Today')" >Today</div>
+                        </li>
+                        <li>
+                            <div (click)="thisWeek('This week')">This week</div>
+                        </li>
+                        <li>
+                            <div (click)="thisMonth('This month')">This month</div>
+                        </li>
+                        <li>
+                            <div (click)="thisYear('This year')">This year</div>
+                        </li>
+                    </ul>
+                  </td>
+
+
+                  <td style="width:fit-content;">
+                    <ul style="float:left; width:fit-content;">
+                        <li>
+                            <div (click)="earlierDays('Yesterday', 1)">Yesterday</div>
+                        </li>
+                        <li>
+                            <div (click)="earlierDays('Day before yesterday', 2)">Day before yesterday</div>
+                        </li>
+                        <li>
+                            <div (click)="earlierDays('This day last week', 7)">This day last week</div>
+                        </li>
+                    </ul>
+                  </td>
+
+
+                  <td style="width:fit-content;">
+                    <ul style="float:left; width:fit-content;">
+                        <li>
+                            <div (click)="lastMinutes('Last 15 minutes', 15)">Last 15 minutes</div>
+                        </li>
+                        <li>
+                            <div (click)="lastMinutes('Last 30 minutes', 30)">Last 30 minutes</div>
+                        </li>
+                        <li>
+                            <div (click)="lastHours('Last 1 hour', 1)">Last 1 hour</div>
+                        </li>
+                        <li>
+                            <div (click)="lastHours('Last 4 hours', 4)">Last 4 hours</div>
+                        </li>
+                        <li>
+                            <div (click)="lastHours('Last 12 hours', 12)">Last 12 hours</div>
+                        </li>
+                        <li>
+                            <div (click)="lastHours('Last 24 hours', 24)">Last 24 hours</div>
+                        </li>
+                        <li>
+                            <div (click)="lastDays('Last 7 days', 7)">Last 7 days</div>
+                        </li>
+
+                    </ul>
+                  </td>
+
+                  <td style="width:fit-content;">
+                      <ul style="float:left;">
+                            <li>
+                                <div (click)="lastDays('Last 30 days', 30)">Last 30 days</div>
+                            </li>
+                            <li>
+                                <div (click)="lastDays('Last 60 days', 60)">Last 60 days</div>
+                            </li>
+                            <li>
+                                <div (click)="lastDays('Last 90 days', 90)">Last 90 days</div>
+                            </li>
+                            <li>
+                                <div (click)="lastMonths('Last 6 months', 6)">Last 6 months</div>
+                            </li>
+                            <li>
+                                <div (click)="lastYears('Last 1 year', 1)">Last 1 year</div>
+                            </li>
+                            <li>
+                                <div (click)="lastYears('Last 2 years', 2)">Last 2 years</div>
+                            </li>
+                            <li>
+                                <div (click)="lastYears('Last 5 years', 5)">Last 5 years</div>
+                            </li>
+                        </ul>
+                      </td>
+
+                </tr>
+            </table>
+        </div>
+
+    </div>

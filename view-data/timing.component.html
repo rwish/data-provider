@@ -1,0 +1,25 @@
+
+<div id="tim">
+  <br>
+  <a href="#" (click)="toggle()">
+    {{ visible ? '&#9202;' : '&#x23F2;' }} Time Range :
+  </a>
+
+  <div class="zippy__content" [hidden]="!visible">
+    <div class="container">
+        <mat-tab-group>
+            <mat-tab label="Quick">
+                <app-quick (timeRange)='onNotify($event)'></app-quick>
+            </mat-tab>
+            <mat-tab label="Relative">
+                <app-relative (timeRange)='onNotify($event)'></app-relative>
+            </mat-tab>
+            <mat-tab label="Absolute">
+                <app-absolute (timeRange)='onNotify($event)'></app-absolute>
+            </mat-tab>
+        </mat-tab-group>
+        
+    </div>
+  </div>
+
+</div>
